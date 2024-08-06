@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arshia | Bootik</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <div class="right-item">
+        <li class="hover-color">Sales</li>
+        <li id="Product">
+            <i class="fas fa-angle-down" style="font-size: 24px"></i>
+            <span>Products</span>
+        </li>
+        <li id="product-item">
+            <span class="hover-color">sneakers</span>
+            <span class="hover-color">pants</span>
+            <span class="hover-color">T-shirt</span>
+            <span class="hover-color">accessory</span>
+        </li>
+        <li class="logo">logo</li>
+    </div>
+    <div id="left-item">
+        <div class="login-signin">
+            <li id="login">login</li> |
+            <li id="sign-in">sign-in</li>
+        </div>
+        <div id="shop-cart">
+            <h3>Carts</h3>
+            <i class="material-icons" style="font-size: 30px">shopping_basket</i>
+        </div>
+        <div id="search-icon">
+            <i class="material-icons" style="font-size: 36px">search</i>
+        </div>
+    </div>
+    <div id="search-box">
+        <i class="material-icons" style="font-size: 30px" id="close-btn">close</i>
+        <input type="text" id="search-input" placeholder="Product name..." />
+        <button id="search-btn">search</button>
+    </div>
+</header>
+<!-- End Header Section -->
+
+<!-- Navigation Section -->
+<section>
+    <div class="topnav">
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        <a class="active">Logo</a>
+        <div id="myLinks">
+            <a>Sales</a>
+            <span class="prt"><i class="fas fa-angle-double-down"><span>Products</span></i></span>
+            <a href="">sneakers</a>
+            <a href="">pants</a>
+            <a href="">T-shirt</a>
+            <a href="">accessory</a>
+        </div>
+    </div>
+    <div class="shop-icon2">
+        <i class="fas fa-shopping-basket"></i>
+    </div>
+    <div id="search-icon2">
+        <i class="material-icons" style="font-size: 36px">search</i>
+    </div>
+    <div id="search-box2">
+        <i class="material-icons" style="font-size: 30px" id="close-btn2">close</i>
+        <input type="text" id="search-input2" placeholder="Product name..." />
+        <button id="search-btn2">search</button>
+    </div>
+</section>
+<!-- End Navigation Section -->
+
+<!-- Swiper Section -->
+<section>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+            <div class="swiper-slide">
+                <img src="images/backiee-119832.jpg" alt="" />
+            </div>
+        </div>
+        <div class="swiper-button-next" id="next"></div>
+        <div class="swiper-button-prev" id="prev"></div>
+    </div>
+</section>
+<!-- End Swiper Section -->
+
+<!-- Gallery Section -->
+<section>
+    <section class="gallery">
+        <div class="item">
+            <img src="https://via.placeholder.com/300x200?text=T-shirt" alt="T-shirt" />
+            <h3>T-shirt</h3>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/300x200?text=Sneakers" alt="Sneakers" />
+            <h3>Sneakers</h3>
+        </div>
+        <div class="item">
+            <img src="https://via.placeholder.com/300x200?text=Accessory" alt="Accessory" />
+            <h3>Accessory</h3>
+        </div>
+    </section>
+</section>
+<!-- End Gallery Section -->
+
+<!-- Latest Products Section -->
+<section class="latest-products">
+    <div class="header">
+        <h2>Latest Products<i class="fas fa-angle-double-down" style="color: #00aeff;padding-left: 5px;"></i></h2>
+        <button class="view-more">more</button>
+    </div>
+    <div class="products">
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 1" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 2" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 3" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 4" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 5" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 6" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 7" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+        <div class="product-item">
+            <img src="https://via.placeholder.com/150" alt="محصول 8" />
+            <h3>product</h3>
+            <p>100$</p>
+        </div>
+    </div>
+</section>
+<!-- End Latest Products Section -->
+
+<!-- Featured Section -->
+<section class="featured" id="featured">
+    <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <!-- تکرار برای دیگر اسلایدها -->
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide slide">
+                <span class="discount">-25%</span>
+                <div class="image">
+                    <img src="images/backiee-119832.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>T-shirt</h3>
+                    <div class="price">$20.00</div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+</section>
+
+<!-- End Featured Section -->
+
+<!-- Services Section -->
+<div class="services">
+    <div class="service">
+        <i class="fas fa-truck"></i>
+        <h3>Immediate delivery</h3>
+        <p>Your products will be sent very soon</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-shield-alt"></i>
+        <h3>Product warranty</h3>
+        <p>All products have a quality guarantee.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-th-large"></i>
+        <h3>Variety of products</h3>
+        <p>We offer a wide variety of products.</p>
+    </div>
+    <div class="service">
+        <i class="fas fa-lock"></i>
+        <h3>Secure payment</h3>
+        <p>Your payment is made with the highest level of security.</p>
+    </div>
+</div>
+<!-- End Services Section -->
+
+<!-- Social Section -->
+<div class="social-container">
+    <div class="social-follow">
+        <i class="fab fa-instagram instagram-icon"></i>
+        <div>
+            <h2>Follow Us on Instagram!</h2>
+            <p>Stay updated with our latest news and products.</p>
+            <p class="social-id">@yourusername</p> <!-- Enter your Instagram ID -->
+        </div>
+    </div>
+    <div class="social-follow">
+        <i class="fab fa-telegram-plane telegram-icon"></i>
+        <div>
+            <h2>Join Us on Telegram!</h2>
+            <p>Be part of our community and get the latest updates.</p>
+            <p class="social-id">@yourtelegramid</p> <!-- Enter your Telegram ID -->
+        </div>
+    </div>
+</div>
+<!-- End Social Section -->
+
+<!-- FAQ Section -->
+<div class="faq-container">
+    <div class="faq-item">
+        <i class="fas fa-question-circle"></i>
+        <div>
+            <h3>What is Boutique?</h3>
+            <p>Boutique is an online platform that offers a curated selection of fashion items and accessories.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <i class="fas fa-shopping-cart"></i>
+        <div>
+            <h3>How can I place an order?</h3>
+            <p>You can place an order by browsing our collection, adding items to your cart, and proceeding to checkout.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <i class="fas fa-credit-card"></i>
+        <div>
+            <h3>What payment methods do you accept?</h3>
+            <p>We accept various payment methods including credit cards, PayPal, and bank transfers.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <i class="fas fa-undo"></i>
+        <div>
+            <h3>What is your return policy?</h3>
+            <p>We offer a 30-day return policy for unworn and unused items. Please refer to our return policy page for more details.</p>
+        </div>
+    </div>
+    <div class="faq-item">
+        <i class="fas fa-headset"></i>
+        <div>
+            <h3>How can I contact customer support?</h3>
+            <p>You can contact our customer support via the contact form on our website or through our email support.</p>
+        </div>
+    </div>
+</div>
+<!-- End FAQ Section -->
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-section">
+            <h3>Products</h3>
+            <ul>
+                <li><i class="fas fa-tshirt"></i> Clothing</li>
+                <li><i class="fas fa-shoe-prints"></i> Footwear</li>
+                <li><i class="fas fa-handbag"></i> Accessories</li>
+                <li><i class="fas fa-cosmetic"></i> Beauty Products</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <ul>
+                <li><i class="fas fa-info-circle"></i> Our Story</li>
+                <li><i class="fas fa-users"></i> Team</li>
+                <li><i class="fas fa-map-marker-alt"></i> Locations</li>
+                <li><i class="fas fa-phone-alt"></i> Contact Us</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Trust</h3>
+            <ul>
+                <li><i class="fas fa-shield-alt"></i> Privacy Policy</li>
+                <li><i class="fas fa-lock"></i> Secure Payments</li>
+                <li><i class="fas fa-thumbs-up"></i> Customer Reviews</li>
+                <li><i class="fas fa-headset"></i> Support</li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        &copy; 2024 Boutique. All rights reserved.
+    </div>
+</footer>
+<!-- End Footer Section -->
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

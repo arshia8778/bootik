@@ -1,0 +1,1039 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+
+/* Global Styles */
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+}
+
+/* List Styles */
+li {
+  color: #555;
+  list-style-type: none;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.hover-color:hover {
+  color: #009ae5;
+  transition: 0.4s all ease;
+}
+
+/* Header Styles */
+.right-item {
+  float: right;
+  margin: 70px 130px;
+}
+
+#left-item {
+  float: left;
+  margin: 70px 100px;
+}
+
+div li {
+  padding: 10px 30px;
+}
+
+#Product:hover {
+  color: #009ae5;
+  transition: 0.4s all ease;
+}
+
+#Product i {
+  position: relative;
+  top: 3.5px;
+  right: 10px;
+}
+
+.logo {
+  background-color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+/* Product Item Dropdown */
+#product-item {
+  z-index: 3;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 300px;
+  top: 120px;
+  background-color: #ffffff;
+  padding: 5px 30px 5px 5px;
+  width: 200px;
+  border: 0.5px solid #b2b2b2;
+  border-radius: 5px;
+}
+
+#product-item span:hover {
+  color: #009ae5;
+  transition: 0.4s all ease;
+}
+
+#product-item span {
+  padding: 10px 5px 10px 10px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/* Login and Cart Styles */
+.login-signin {
+  position: relative;
+  top: 15px;
+  left: 0px;
+}
+
+#login:hover,
+#sign-in:hover {
+  color: #009ae5;
+  transition: 0.4s all ease;
+}
+
+#shop-cart {
+  color: #292929;
+  cursor: pointer;
+  position: absolute;
+  left: 350px;
+  top: 87px;
+  background-color: #c1c1c1;
+  width: 100px;
+  height: 30px;
+  padding: 10px 17px;
+  border-radius: 25px;
+  transition: 0.4s all ease;
+}
+
+#shop-cart:hover {
+  background-color: #7e7e7e;
+  color: #000;
+}
+
+#shop-cart h3 {
+  position: relative;
+  left: 37px;
+  top: 0px;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+#shop-cart i {
+  position: relative;
+  top: -28px;
+}
+
+/* Search Icon Styles */
+#search-icon {
+  color: #292929;
+  cursor: pointer;
+  position: absolute;
+  left: 510px;
+  top: 95px;
+}
+
+#search-icon:hover {
+  color: #009ae5;
+  transition: 0.4s all ease;
+}
+
+/* Search Box Styles */
+#search-box {
+  visibility: hidden;
+  position: absolute;
+  top: 95px;
+  left: 130px;
+}
+
+#search-input {
+  font-size: 18px;
+  padding-left: 40px;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #949494;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-input::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#close-btn {
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+#close-btn:hover {
+  color: #009ae5;
+  transition: 0.3s all ease;
+}
+
+#search-btn {
+  border-radius: 5px;
+  font-size: 15px;
+  height: 37px;
+  width: 80px;
+  position: relative;
+  right: 87px;
+  background: #e8e8e8;
+  color: #b9b9b9;
+  border: none;
+}
+
+/* Mobile Search Box */
+#search-box2 {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 50px;
+}
+
+#search-input2 {
+  font-size: 18px;
+  padding-left: 40px;
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  border: 1px solid #949494;
+}
+
+input:focus {
+  outline: none;
+}
+
+#search-input2::placeholder {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+#close-btn2 {
+  cursor: pointer;
+  position: relative;
+  top: 10px;
+  left: 40px;
+}
+
+#close-btn2:hover {
+  color: #009ae5;
+  transition: 0.3s all ease;
+}
+
+#search-btn2 {
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 15px;
+  height: 37px;
+  width: 80px;
+  position: relative;
+  right: 87px;
+  background: #e8e8e8;
+  color: #b9b9b9;
+  border: none;
+}
+
+#search-icon2 {
+  width: 20px;
+  display: none;
+  position: absolute;
+  left: 80px;
+  top: 5px;
+  cursor: pointer;
+}
+
+#search-icon2:hover {
+  color: #009ae5;
+  transition: 0.3s all ease;
+}
+
+/* Mobile Container */
+.mobile-container {
+  width: 100%;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+/* Top Navigation */
+#myLinks .prt {
+  color: #000;
+  padding: 10px 100% 10px 10px;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #cecece;
+}
+
+#myLinks .prt i span {
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+
+#myLinks a {
+  font-weight: 600;
+  color: #555;
+  background-color: #fff;
+}
+
+#myLinks a:hover {
+  background-color: #8b8b8b;
+  color: #000;
+}
+
+/* Top Navigation Styles */
+.topnav {
+  display: none;
+  overflow: hidden;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  width: 40px;
+  background-color: #c1c1c1;
+  font-size: 27px;
+  font-weight: 900;
+}
+
+/* Shop Icon */
+.shop-icon2 {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  top: 12px;
+  left: 130px;
+  font-size: 25px;
+}
+
+.shop-icon2:hover {
+  color: #009ae5;
+  transition: 0.3s all ease;
+}
+
+/* Swiper Styles */
+.swiper {
+  position: relative;
+  top: -30px;
+  width: 80%;
+  height: 450px;
+}
+
+.swiper-slide {
+  height: 450px;
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-button-next {
+  color: #000 !important;
+}
+
+.swiper-button-prev {
+  color: #000 !important;
+}
+
+/* Gallery Styles */
+.gallery {
+  position: relative;
+  left: 10%;
+  top: 50px;
+  display: flex; /* استفاده از فلکس باکس */
+  justify-content: space-between; /* فاصله بین آیتم‌ها */
+  width: 80%; /* عرض کل 80% */
+}
+
+.item {
+  flex: 1; /* هر آیتم به اندازه مساوی فضای موجود را اشغال می‌کند */
+  margin: 10px; /* حاشیه بین آیتم‌ها */
+  padding: 10px; /* فضای داخلی */
+  background-color: #fff; /* رنگ پس‌زمینه */
+  text-align: center; /* متن در وسط */
+  border: 1px solid #ccc; /* حاشیه */
+  border-radius: 5px; /* گوشه‌های گرد */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* سایه */
+}
+
+.item img {
+  width: 100%; /* عرض تصویر به اندازه کامل آیتم */
+  height: auto; /* حفظ نسبت ابعاد تصویر */
+  border-radius: 5px; /* گوشه‌های گرد تصویر */
+}
+
+.item img:hover {
+  scale: 1.06;
+  transition: 0.4s all ease;
+}
+
+.item h3 {
+  margin-top: 10px; /* فاصله بالای عنوان */
+  font-size: 20px; /* اندازه فونت عنوان */
+  color: #333; /* رنگ عنوان */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column; /* تغییر به حالت ستونی در صفحه نمایش‌های کوچک */
+    align-items: center; /* مرکز قرار دادن در محور X */
+    margin-top: 70px;
+  }
+
+  .item {
+    width: 100%; /* عرض کامل در حالت ستونی */
+    margin: 10px 0; /* حاشیه عمودی */
+  }
+}
+@media (max-width: 991px) {
+  #next,
+  #prev {
+    top: 90%;
+    height: 2rem !important; /* 64px */
+    width: 2rem !important; /* 64px */
+    font-size: 0.5rem !important;
+  }
+
+  #prev {
+    left: auto;
+    right: 3rem;
+  }
+}
+@media (max-width: 1168px) {
+  .swiper {
+    height: 300px; /* ارتفاع کمتر برای صفحه نمایش‌های کوچک */
+  }
+
+  #search-icon2 {
+    display: block;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  header {
+    display: none;
+  }
+
+  .swiper {
+    top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  #next,
+  #prev {
+    top: 90%;
+    height: 2rem !important; /* 64px */
+    width: 2rem !important; /* 64px */
+    font-size: 0.5rem !important;
+  }
+
+  #prev {
+    left: auto;
+    right: 3rem;
+  }
+  .swiper {
+    height: 200px; /* ارتفاع کمتر برای صفحه نمایش‌های خیلی کوچک */
+  }
+
+  #search-icon2 {
+    display: block;
+  }
+
+  .topnav {
+    display: block;
+  }
+
+  header {
+    display: none;
+  }
+
+  #search-btn2 {
+    position: absolute;
+    top: 6px;
+    left: 293px;
+  }
+}
+
+@media (max-width: 500px) {
+  #search-btn2 {
+    position: absolute;
+    top: 6px;
+    left: 293px;
+  }
+}
+
+@media (max-width: 508px) {
+  #search-btn2 {
+    position: absolute;
+    top: 6px;
+    left: 293px;
+  }
+}
+
+@media (max-width: 425px) {
+  #search-box2 {
+    position: relative;
+    left: 40px;
+    top: -47px;
+  }
+
+  #search-input2 {
+    width: 200px;
+  }
+
+  #search-input2::placeholder {
+    font-size: 14px;
+  }
+
+  #close-btn {
+    font-size: 17px;
+  }
+
+  #search-btn2 {
+    width: 60px;
+    position: absolute;
+    left: 213px;
+  }
+}
+
+/* Latest Products Section */
+.latest-products {
+  position: relative;
+  left: 5%;
+  max-width: 90%; /* حداکثر عرض برای بخش */
+  margin-top: 150px; /* مرکز قرار دادن */
+  margin-bottom: 80px;
+  border-radius: 8px; /* گوشه‌های گرد */
+}
+
+.header {
+  display: flex; /* استفاده از فلکس باکس */
+  justify-content: space-between; /* فاصله بین عنوان و دکمه */
+  align-items: center; /* مرکز قرار دادن عمودی */
+  margin-bottom: 20px; /* فاصله پایین */
+}
+
+.header h2 {
+  font-size: 24px; /* اندازه فونت عنوان */
+  color: #333; /* رنگ عنوان */
+}
+
+.view-more {
+  padding: 10px 20px; /* فضای داخلی دکمه */
+  background-color: #0095e0; /* رنگ پس‌زمینه دکمه */
+  color: #fff; /* رنگ متن دکمه */
+  border: none; /* حذف حاشیه */
+  border-radius: 5px; /* گوشه‌های گرد */
+  cursor: pointer; /* نشانگر ماوس */
+  transition: background-color 0.3s; /* انیمیشن تغییر رنگ */
+}
+
+.view-more:hover {
+  background-color: #007bb5; /* رنگ جدید در حالت هاور */
+}
+
+.products {
+  display: flex; /* استفاده از فلکس باکس */
+  flex-wrap: wrap; /* اجازه به آیتم‌ها برای شکستن به خط بعدی */
+  justify-content: space-between; /* فاصله بین محصولات */
+}
+
+.product-item {
+  flex: 1 1 calc(20% - 20px); /* هر محصول 25% عرض را اشغال می‌کند و حاشیه در نظر گرفته می‌شود */
+  margin: 10px; /* حاشیه بین محصولات */
+  background-color: #f9f9f9; /* رنگ پس‌زمینه محصولات */
+  border: 1px solid #ddd; /* حاشیه */
+  border-radius: 5px; /* گوشه‌های گرد */
+  text-align: center; /* متن در وسط */
+  padding: 10px; /* فضای داخلی */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* سایه */
+}
+
+.product-item img {
+  width: 100%; /* عرض تصویر به اندازه کامل آیتم */
+  height: auto; /* حفظ نسبت ابعاد تصویر */
+  border-radius: 5px; /* گوشه‌های گرد تصویر */
+}
+
+.product-item img:hover {
+  scale: 1.05;
+  transition: 0.4s all ease;
+}
+
+.product-item h3 {
+  margin: 10px 0; /* فاصله بالای عنوان */
+  font-size: 18px; /* اندازه فونت عنوان */
+  color: #333; /* رنگ عنوان */
+}
+
+.product-item p {
+  color: #666; /* رنگ قیمت */
+  font-size: 16px; /* اندازه فونت قیمت */
+}
+
+/* Featured Section */
+.featured {
+  margin-top: 9.375rem; /* 150px */
+}
+
+.featured .featured-slider .slide {
+  margin-top: 1.25rem; /* 20px */
+  margin-bottom: 12.5rem; /* 200px */
+  position: relative;
+  top: -1.25rem; /* -20px */
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.featured .featured-slider .slide .discount {
+  cursor: pointer;
+  position: absolute;
+  top: 0.5rem; /* 8px */
+  left: 0.5rem; /* 8px */
+  display: block;
+  height: 2rem; /* 32px */
+  width: 4rem; /* 64px */
+  background: #555;
+  color: #fff;
+  line-height: 2.2rem; /* 35px */
+  text-align: center;
+  font-size: 1rem; /* 16px */
+  border-radius: 0.5rem;
+}
+
+.featured .featured-slider .slide .image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.featured .featured-slider .slide .image img {
+  height: 17.5rem; /* 280px */
+  width: 100%;
+  object-fit: cover;
+}
+
+.featured .featured-slider .slide .content {
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+.featured .featured-slider .slide .content h3 {
+  font-size: 1.2rem; /* 19px */
+  color: #10221b;
+  font-weight: normal;
+}
+
+.featured .featured-slider .slide .content .price {
+  padding: 0.5rem 0;
+  font-size: 2rem; /* 32px */
+  font-weight: bolder;
+  color: #10221b;
+}
+
+.featured .featured-slider .slide .content .stars {
+  font-size: 1.7rem; /* 27px */
+}
+
+.featured .featured-slider .slide .content .stars i {
+  color: gold;
+}
+
+/* Swiper Button Styles */
+.swiper-button-prev,
+.swiper-button-next {
+  height: 4rem !important; /* 64px */
+  width: 4rem !important; /* 64px */
+  border-radius: 0.5rem !important;
+  background: #fff;
+  color: #10221b !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3) !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background: #10221b !important;
+  color: #fff !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 1.5rem !important; /* 24px */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .featured .featured-slider .slide {
+    margin-bottom: 5rem; /* 80px */
+  }
+
+  .featured .featured-slider .slide .image img {
+    height: 160px; /* 240px */
+  }
+
+  .featured .featured-slider .slide .content h3 {
+    font-size: 1rem; /* 16px */
+  }
+
+  .featured .featured-slider .slide .content .price {
+    font-size: 1.5rem; /* 24px */
+  }
+
+  .featured .featured-slider .slide .content .stars {
+    font-size: 20px; /* 24px */
+  }
+}
+@media (max-width: 459px){
+   .featured .featured-slider .slide{
+    right: 3px;
+    width: 100%;
+    border-radius: 0;
+  }
+  .featured .featured-slider .slide .image img {
+    height: 80px; /* 192px */
+    border-radius: 0;
+  }
+}
+@media (max-width: 480px) {
+ 
+  .featured .featured-slider .slide .image img {
+    height: 120px; /* 192px */
+  }
+
+  .featured .featured-slider .slide .content h3 {
+    font-size: 0.9rem; /* 14px */
+  }
+
+  .featured .featured-slider .slide .content .price {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .featured .featured-slider .slide .content .stars {
+    font-size: 17px; /* 20px */
+  }
+}
+
+/* Services Section */
+.services {
+  position: relative;
+  top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 1200px;
+  gap: 20px;
+}
+
+.service {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(25% - 20px);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+}
+
+.service i {
+  font-size: 40px;
+  color: #009688;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.service p {
+  color: #666;
+  font-size: 14px;
+}
+
+/* Responsive Styles for Services */
+@media (max-width: 768px) {
+  .service {
+    flex: 1 1 calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .service {
+    flex: 1 1 100%;
+  }
+}
+
+/* Social Section */
+.social-container {
+  position: relative;
+  top: 120px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* برای ریسپانسیو شدن */
+}
+
+.social-follow:hover {
+  transform: translateY(-5px);
+}
+
+.social-follow {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  text-align: center;
+  flex: 1 1 calc(45% - 20px); /* هر بخش 45% عرض می‌گیرد */
+  margin: 10px; /* فاصله بین بخش‌ها */
+  transition: transform 0.3s;
+}
+
+.social-follow i {
+  font-size: 50px;
+  margin-right: 15px;
+}
+
+.instagram-icon {
+  color: #e1306c; /* رنگ مخصوص اینستاگرام */
+}
+
+.telegram-icon {
+  color: #0088cc; /* رنگ مخصوص تلگرام */
+}
+
+.social-follow h2 {
+  font-size: 24px;
+  color: #333;
+  margin: 0;
+  flex: 1 1 100%; /* برای ریسپانسیو شدن */
+}
+
+.social-follow p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 5px;
+  flex: 1 1 100%; /* برای ریسپانسیو شدن */
+}
+
+.social-id {
+  font-weight: bold;
+  color: #e1306c; /* رنگ مخصوص اینستاگرام */
+  margin-top: 10px;
+}
+
+/* Responsive Styles for Social Section */
+@media (max-width: 768px) {
+  .social-follow {
+    flex: 1 1 100%; /* در اندازه‌های کوچک‌تر هر بخش 100% عرض می‌گیرد */
+    margin: 10px 0; /* فاصله عمودی بین بخش‌ها */
+  }
+}
+
+/* FAQ Section */
+.faq-container {
+  width: 80%;
+  margin: 220px auto 100px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* فاصله بین سوالات */
+}
+
+.faq-item {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq-item i {
+  font-size: 30px;
+  margin-right: 15px;
+  color: #007bb5; /* رنگ آیکون */
+}
+
+.faq-item h3 {
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+  flex: 1; /* برای استفاده از فضای باقی‌مانده */
+}
+
+.faq-item p {
+  font-size: 16px;
+  color: #666;
+  margin-top: 10px;
+  display: none; /* مخفی کردن پاسخ به طور پیش‌فرض */
+}
+
+.faq-item.active p {
+  display: block; /* نمایش پاسخ در صورت فعال بودن */
+}
+
+.faq-item.active {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .faq-item h3 {
+    font-size: 18px; /* اندازه متن عنوان در اندازه‌های کوچک‌تر */
+  }
+
+  .faq-item p {
+    font-size: 14px; /* اندازه متن پاسخ در اندازه‌های کوچک‌تر */
+  }
+
+  .faq-item.active {
+    width: 80%;
+  }
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-container {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1 1 30%; /* هر بخش 30% عرض می‌گیرد */
+  margin: 10px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #007bb5; /* رنگ خط زیر عنوان */
+  margin-top: 5px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+  transition: color 0.3s;
+}
+
+.footer-section ul li:hover {
+  color: #007bb5; /* رنگ تغییر در هاور */
+}
+
+.footer-section ul li i {
+  margin-right: 8px;
+  color: #007bb5; /* رنگ آیکون */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+/* Responsive Styles for Footer */
+@media (max-width: 768px) {
+  .footer-section {
+    flex: 1 1 100%; /* در اندازه‌های کوچک‌تر هر بخش 100% عرض می‌گیرد */
+  }
+}
+
+/* Additional Responsive Styles */
+@media (max-width: 768px) {
+  .product-item {
+    flex: 1 1 calc(42% - 20px); /* دو محصول در یک ردیف */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-item {
+    flex: 1 1 100%; /* یک محصول در یک ردیف */
+  }
+}
