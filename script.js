@@ -15,7 +15,7 @@ var search_btn2 = document.getElementById("search-btn2");
 // نمایش منوی محصولات
 product.addEventListener("mouseover", function () {
   product_item.style.visibility = "visible";
-  product.style.color = "#009ae5";
+  product.style.color = "#0073d0";
 });
 product.addEventListener("mouseout", function () {
   product_item.style.visibility = "hidden";
@@ -25,7 +25,7 @@ product.addEventListener("mouseout", function () {
 // نمایش منوی محصولات هنگام ماوس‌اور روی آن
 product_item.addEventListener("mouseover", function () {
   product_item.style.visibility = "visible";
-  product.style.color = "#009ae5";
+  product.style.color = "#0073d0";
 });
 product_item.addEventListener("mouseout", function () {
   product_item.style.visibility = "hidden";
