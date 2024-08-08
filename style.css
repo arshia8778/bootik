@@ -1109,8 +1109,17 @@ footer {
   .product-item {
     flex: 1 1 calc(42% - 20px); /* دو محصول در یک ردیف */
   }
+  .featured-title{
+    position: relative;
+    left: -10px !important;
+  }
 }
-
+@media (max-width: 560px) {
+  .featured-title{
+    position: relative;
+    left: -50px !important;
+  }
+}
 @media (max-width: 480px) {
   .product-item {
     flex: 1 1 100%; /* یک محصول در یک ردیف */
