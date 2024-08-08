@@ -1114,6 +1114,36 @@ footer {
     left: -10px !important;
   }
 }
+@media (max-width: 336px){
+.featured-title h1{
+  font-size: 18px !important;
+}
+.featured-title h1 img{
+  position: relative;
+  top: 10px;
+  left: 0px !important;
+  height: 30px !important;
+  width: 30px !important;
+}
+.header h2{
+  position: relative;
+  left: 12px;
+  font-size: 18px !important;
+}
+.header h2 img{
+  position: relative;
+  top: 7px;
+  left: -3px;
+  height: 30px !important;
+  width: 30px !important;
+}
+.view-more{
+  padding: 0 !important;
+  height: 37px !important;
+  width: 102px;
+  line-height: -50px;
+}
+}
 @media (max-width: 560px) {
   .featured-title{
     position: relative;
