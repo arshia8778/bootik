@@ -144,11 +144,11 @@ div li {
   position: absolute;
   left: 370px;
   top: 93px;
-  transition: 0.2s all ease-in-out;
 }
 
 #search-icon:hover {
   scale: 1.07;
+  transition: 0.2s all ease-in-out;
 }
 
 /* Search Box Styles */
@@ -888,7 +888,7 @@ input:focus {
 /* Responsive Styles for Services */
 @media (max-width: 768px) {
   .service {
-    flex: 1 1 calc(50% - 20px);
+    flex: 1 1 calc(60% - 20px);
   }
 }
 
@@ -1114,5 +1114,22 @@ footer {
 @media (max-width: 480px) {
   .product-item {
     flex: 1 1 100%; /* یک محصول در یک ردیف */
+  }
+}
+@media (max-width: 1024px){
+  .featured-title h1{
+    font-size: 23px;
+    top: -10px;
+    left: 90px;
+  }
+  .featured-title img{
+    width: 40px !important;
+    height: 40px !important;
+    left: 260px !important;
+  }
+  .item-icon{
+    height: 40px;
+    width: 40px;
+    left: -5px;
   }
 }
