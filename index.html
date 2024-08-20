@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arshia | Bootik</title>
+    <link rel="icon" href="images/shop-svgrepo-com.svg" type="image/svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazir&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <button id="scrollToTopBtn" class="scrollToTopBtn">
+      <i class="fas fa-angle-up" style="font-size: 25px"></i>
+    </button>
+    <!-- Header Section -->
+    <header class="head">
+      <div class="right-item">
+        <li class="hover-color">حراجی</li>
+        <li id="Product">
+          <span>محصولات</span>
+        </li>
+        <li id="product-item">
+          <span class="hover-color" style="right: -140px !important;">کفش</span>
+          <span class="hover-color" style="right: -140px !important;">شلوار</span>
+          <span class="hover-color" style="right: -134px !important;">تیشرت</span>
+          <span class="hover-color">لوازم جانبی</span>
+        </li>
+        <li class="logo">لوگو</li>
+      </div>
+      <div id="left-item">
+        <div class="login-signin" title="login or sign up">
+          <img
+            src="images/add-friend.png"
+            alt=""
+            style="width: 60px; height: 60px"
+            class="login-icon"
+            id="login-icon"
+          />
+        </div>
+        <div id="shop-cart">
+          <div id="carts-item">0</div>
+          <h3>سبدخرید</h3>
+          <img src="images/shopping-cart.gif" alt="" />
+        </div>
+        <div id="search-icon">
+          <i class="fas fa-search" style="font-size: 32px"></i>
+        </div>
+      </div>
+      <div id="search-box">
+        <i class="material-icons" style="font-size: 36px" id="close-btn"
+          >close</i
+        >
+        <input type="text" id="search-input" placeholder="Product name..." />
+        <button id="search-btn">جستجو</button>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Navigation Section -->
+    <section class="nav1">
+      <div class="hum-menu" onclick="menuhandle()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="login-signin2" id="login-signin2">
+        <img
+          src="images/add-friend.png"
+          alt=""
+          style="width: 40px; height: 40px"
+          class="login-icon"
+        />
+      </div>
+      <div class="shop-icon2" id="shop-icon2">
+        <span id="number-item">0</span>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="logo2">
+        <h3>لوگو</h3>
+      </div>
+      <div class="all-items">
+        <li>حراجی</li>
+        <li>کفش</li>
+        <li>شلوار</li>
+        <li>تیشرت</li>
+        <li>لوازم جانبی</li>
+      </div>
+      <div id="search-icon2">
+        <i class="fas fa-search" style="font-size: 28px" id="oo"></i>
+      </div>
+      <div id="search-box2">
+        <i class="material-icons" style="font-size: 30px" id="close-btn2"
+          >close</i
+        >
+        <input type="text" id="search-input2" placeholder="Product name..." />
+        <button id="search-btn2">جستجو</button>
+      </div>
+    </section>
+    <!-- End Navigation Section -->
+
+     <!-- products section -->
+      <div id="product-section-all">
+        <div class="sending-icon">
+          <div class="purchase-section">
+            <div class="step">
+                <i class="fas fa-shopping-cart"></i>
+                <h3>بررسی خرید</h3>
+                <p>بررسی جزئیات خرید شما.</p>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <i class="fas fa-truck"></i>
+                <h3>اطلاعات ارسال</h3>
+                <p>اطلاعات مربوط به ارسال محصول.</p>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <i class="fas fa-credit-card"></i>
+                <h3>نحوه پرداخت</h3>
+                <p>روش‌های پرداخت موجود.</p>
+            </div>
+            <div class="line"></div>
+            <div class="step">
+                <i class="fas fa-check-circle"></i>
+                <h3>پایان خرید</h3>
+                <p>خرید شما با موفقیت انجام شد.</p>
+            </div>
+        </div>
+        </div>
+        <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
+        <div class="Total-price"><p>مبلغ کل سبد خرید:</p> <h5>0 تومان</h5></div>
+        <div class="cats-section-btn">
+          <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
+          <button id="order-registration-btn">ثبت سفارش<i class="fa fa-angle-left"></i></button>
+        </div>
+      </div>
+      <!-- products section Ends -->
+
+    <!-- login sign up section -->
+
+    <div id="form">
+      <h1 id="back-btn"><i class="fas fa-arrow-left"></i>برگشت</h1>
+      <button id="login-section-btn">ورود</button>
+      <button id="sign-section-btn">ثبت نام</button>
+      <div id="form-close">
+        <i class="material-icons">close</i>
+      </div>
+      <div id="login-pages">
+        <h1 id="Login-title">ورود</h1>
+        <h3 id="lable-email">ایمیل خود را وارد کنید</h3>
+        <input type="text" id="login-email" />
+        <h3 id="lable-password">پسورد خود را وارد کنید</h3>
+        <input type="text" id="login-password" />
+        <input type="button" id="login-btn" value="ورود" />
+      </div>
+      <div id="sign-up-pages">
+        <h1 id="sign-up-title">ثبت نام</h1>
+        <h3 id="lable-email2">ایمیل خود را وارد کنید</h3>
+        <input type="text" id="sign-up-email" />
+        <h3
+          id="lable-password2"
+          style="right: 112px !important; bottom: 16px !important"
+        >
+          پسورد خود را وارد کنید
+        </h3>
+        <input type="text" id="sign-up-password" />
+        <h3
+          id="lable-password2"
+          style="right: 112px !important; bottom: 24px !important"
+        >
+          پسورد خود را تایید کنید
+        </h3>
+        <input
+          type="text"
+          id="sign-up-password"
+          style="bottom: 40px !important"
+        />
+        <input type="button" id="sign-up-btn" value="ثبت نام" />
+      </div>
+    </div>
+
+    <!--End login sign up section -->
+
+    <!-- Swiper Section -->
+    <section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="" />
+          </div>
+        </div>
+        <div class="swiper-button-next" style="color: #55555500" id="next">
+          <i
+            class="fa fa-angle-right"
+            style="
+              color: #000 !important;
+              font-size: 40px;
+              position: relative;
+              left: 12px;
+            "
+          ></i>
+        </div>
+        <div class="swiper-button-prev" style="color: #55555500" id="prev">
+          <i
+            class="fa fa-angle-left"
+            style="
+              color: #000 !important;
+              font-size: 40px;
+              position: relative;
+              left: 10px;
+            "
+          ></i>
+        </div>
+      </div>
+    </section>
+    <!-- End Swiper Section -->
+
+    <!-- Gallery Section -->
+    <section>
+      <section class="gallery">
+        <div class="item">
+          <img
+            src="https://via.placeholder.com/300x200?text=T-shirt"
+            alt="T-shirt"
+          />
+          <h3>تیشرت</h3>
+        </div>
+        <div class="item">
+          <img
+            src="https://via.placeholder.com/300x200?text=Sneakers"
+            alt="Sneakers"
+          />
+          <h3>کفش</h3>
+        </div>
+        <div class="item">
+          <img
+            src="https://via.placeholder.com/300x200?text=Accessory"
+            alt="Accessory"
+          />
+          <h3>لوازم جانبی</h3>
+        </div>
+      </section>
+    </section>
+    <!-- End Gallery Section -->
+
+    <!-- Latest Products Section -->
+    <div class="products-section">
+      <h2 class="section-title" style="color: #999999">محصولات تخفیفی</h2>
+      <a href="special.html" style="text-decoration: none; color: #fff"
+        ><button class="view-more">بیشتر</button></a
+      >
+
+      <div class="products-container">
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 1" />
+          <h3>عنوان محصول 1</h3>
+          <p class="price">قیمت: 100,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">15%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 2" />
+          <h3>عنوان محصول 2</h3>
+          <p class="price">قیمت: 200,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">10%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 3" />
+          <h3>عنوان محصول 3</h3>
+          <p class="price">قیمت: 300,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">25%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 4" />
+          <h3>عنوان محصول 4</h3>
+          <p class="price">قیمت: 400,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">30%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 5" />
+          <h3>عنوان محصول 5</h3>
+          <p class="price">قیمت: 500,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">5%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 6" />
+          <h3>عنوان محصول 6</h3>
+          <p class="price">قیمت: 600,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 7" />
+          <h3>عنوان محصول 7</h3>
+          <p class="price">قیمت: 700,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">15%</div>
+          <img src="images/backiee-119832.jpg" alt="محصول 8" />
+          <h3>عنوان محصول 8</h3>
+          <p class="price">قیمت: 800,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Latest Products Section -->
+
+    <!-- Featured Section -->
+    <div class="slider-title"><h1>جدید ترین محصولات</h1></div>
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 1" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 2" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 3" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 4" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 5" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 6" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 7" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 8" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 9" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="slide">
+          <img src="images/backiee-119832.jpg" alt="محصول 10" />
+          <h3>عنوان محصول 1</h3>
+          <p>قیمت: 1,000,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+      </div>
+      <button class="prev" onclick="moveSlide(-1)">
+        <i class="fa fa-angle-left"></i>
+      </button>
+      <button class="next" onclick="moveSlide(1)">
+        <i class="fa fa-angle-right"></i>
+      </button>
+    </div>
+    <!-- End Featured Section -->
+
+    <!-- Services Section -->
+
+    <div class="services">
+      <div class="services-title">
+        <h1 style="color: #999999; font-size: 27px">خدمات</h1>
+      </div>
+      <div class="service">
+        <i
+          ><img
+            src="images/mail-truck.gif"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <h3>تحویل فوری</h3>
+        <p>محصولات شما به زودی ارسال خواهد شد</p>
+      </div>
+      <div class="service">
+        <i
+          ><img
+            src="images/shield.gif"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <h3>گارانتی محصول</h3>
+        <p>تمامی محصولات دارای ضمانت کیفیت می باشند.</p>
+      </div>
+      <div class="service">
+        <i
+          ><img
+            src="images/transformation.png"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <h3>تنوع محصولات</h3>
+        <p>ما طیف گسترده ای از محصولات را ارائه می دهیم.</p>
+      </div>
+      <div class="service">
+        <i
+          ><img
+            src="images/secure-payment.png"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <h3>پرداخت مطمئن</h3>
+        <p>پرداخت شما با بالاترین سطح امنیت انجام می شود.</p>
+      </div>
+    </div>
+    <!-- End Services Section -->
+
+    <!-- Social Section -->
+
+    <div class="social-container">
+      <div class="social-title">
+        <h1 style="color: #999999; font-size: 27px">اجتماعی ما</h1>
+      </div>
+      <div class="social-follow">
+        <i
+          ><img
+            src="images/instagram (1).png"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <div>
+          <h2>ما را در اینستاگرام دنبال کنید!</h2>
+          <p>با آخرین اخبار و محصولات ما به روز باشید.</p>
+          <p class="social-id">
+            <img
+              src="images/verify.png"
+              alt=""
+              style="
+                width: 20px;
+                height: 20px;
+                position: relative;
+                top: 6px;
+                left: -2px;
+              "
+            />نام کاربری شما
+          </p>
+          <!-- Enter your Instagram ID -->
+        </div>
+      </div>
+      <div class="social-follow">
+        <i
+          ><img
+            src="images/telegram.png"
+            alt=""
+            style="height: 60px; width: 60px"
+        /></i>
+        <div>
+          <h2>در تلگرام به ما بپیوندید</h2>
+          <p>بخشی از انجمن ما باشید و آخرین به روز رسانی ها را دریافت کنید.</p>
+          <p class="social-id">@yourtelegramid</p>
+          <!-- Enter your Telegram ID -->
+        </div>
+      </div>
+    </div>
+    <!-- End Social Section -->
+
+    <!-- FAQ Section -->
+
+    <div class="faq-container">
+      <div class="FAQ-title">
+        <h1 style="color: #999999; font-size: 27px">سوالات متداول</h1>
+      </div>
+      <div class="faq-item">
+        <i
+          ><img
+            src="images/question-mark.png"
+            alt=""
+            style="height: 50px; width: 50px"
+        /></i>
+        <div>
+          <h3>بوتیک چیست؟</h3>
+          <p>
+            بوتیک یک پلت فرم آنلاین است که مجموعه ای از اقلام مد و لوازم جانبی
+            را ارائه می دهد.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <i
+          ><img
+            src="images/shopping-cart.png"
+            alt=""
+            style="height: 50px; width: 50px"
+        /></i>
+        <div>
+          <h3>چگونه می توانم سفارش بدهم؟</h3>
+          <p>
+            شما می توانید با مرور مجموعه ما و افزودن موارد به آن سفارش دهید سبد
+            خرید شما، و اقدام به پرداخت.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <i
+          ><img
+            src="images/credit-card.png"
+            alt=""
+            style="height: 50px; width: 50px"
+        /></i>
+        <div>
+          <h3>چه روش های پرداختی را می پذیرید؟</h3>
+          <p>
+            ما روش های پرداخت مختلف از جمله کارت های اعتباری، پی پال، و نقل و
+            انتقالات بانکی
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <i
+          ><img src="images/back.png" alt="" style="height: 50px; width: 50px"
+        /></i>
+        <div>
+          <h3>سیاست بازگشت شما چیست؟</h3>
+          <p>
+            ما یک سیاست بازگشت 30 روزه برای اقلام فرسوده و استفاده نشده ارائه می
+            دهیم. لطفا برای جزئیات بیشتر به صفحه سیاست بازگشت ما مراجعه کنید.
+          </p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <i
+          ><img
+            src="images/live-chat.png"
+            alt=""
+            style="height: 50px; width: 50px"
+        /></i>
+        <div>
+          <h3>چگونه می توانم با پشتیبانی مشتری تماس بگیرم؟</h3>
+          <p>
+            شما می توانید از طریق فرم تماس در ما با پشتیبانی مشتری ما تماس
+            بگیرید وب سایت یا از طریق پشتیبانی ایمیل ما.
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- End FAQ Section -->
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>محصولات</h3>
+          <ul>
+            <li><i class="fas fa-tshirt"></i> لباس</li>
+            <br />
+            <li><i class="fas fa-shoe-prints"></i> کفش</li>
+            <li>
+              <i
+                ><img
+                  src="images/watch.png"
+                  alt=""
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    left: 5px;
+                  "
+              /></i>
+              لوازم جانبی
+            </li>
+            <li>
+              <i
+                ><img
+                  src="images/primer.png"
+                  alt=""
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    left: 8px;
+                  "
+              /></i>
+              محصولات زیبایی
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>درباره ما</h3>
+          <ul>
+            <li><i class="fas fa-info-circle"></i> داستان ما</li>
+            <br />
+            <li><i class="fas fa-users"></i> تیم</li>
+            <br />
+            <li><i class="fas fa-map-marker-alt"></i>مکان ها</li>
+            <br />
+            <li><i class="fas fa-phone-alt"></i> تماس با ما</li>
+            <br />
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>اعتماد کنید</h3>
+          <ul>
+            <li><i class="fas fa-shield-alt"></i> سیاست حفظ حریم خصوصی</li>
+            <li><i class="fas fa-lock"></i> پرداخت های امن</li>
+            <li><i class="fas fa-thumbs-up"></i> نظرات مشتریان</li>
+            <li><i class="fas fa-headset"></i> پشتیبانی کنید</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="background-color: #555; height: 0.5px; width: 100%" />
+      <div class="footer-bottom" style="position: relative; top: 10px">
+        &copy; بوتیک 2024. تمامی حقوق محفوظ است.
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

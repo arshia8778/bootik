@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="fa">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>محصولات تخفیفی</title>
+    <link rel="stylesheet" href="special.css" />
+    <link rel="icon" href="images/shop-svgrepo-com.svg" type="image/svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazir&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+         <!-- products section -->
+         <div id="product-section-all">
+          <div class="sending-icon">
+            <div class="purchase-section">
+              <div class="step">
+                  <i class="fas fa-shopping-cart"></i>
+                  <h3>بررسی خرید</h3>
+                  <p>بررسی جزئیات خرید شما.</p>
+              </div>
+              <div class="line"></div>
+              <div class="step">
+                  <i class="fas fa-truck"></i>
+                  <h3>اطلاعات ارسال</h3>
+                  <p>اطلاعات مربوط به ارسال محصول.</p>
+              </div>
+              <div class="line"></div>
+              <div class="step">
+                  <i class="fas fa-credit-card"></i>
+                  <h3>نحوه پرداخت</h3>
+                  <p>روش‌های پرداخت موجود.</p>
+              </div>
+              <div class="line"></div>
+              <div class="step">
+                  <i class="fas fa-check-circle"></i>
+                  <h3>پایان خرید</h3>
+                  <p>خرید شما با موفقیت انجام شد.</p>
+              </div>
+          </div>
+          </div>
+          <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
+          <div class="Total-price"><p>مبلغ کل سبد خرید:</p> <h5>0 تومان</h5></div>
+          <div class="cats-section-btn">
+            <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
+            <button id="order-registration-btn">ثبت سفارش<i class="fa fa-angle-left"></i></button>
+          </div>
+        </div>
+        <!-- products section Ends -->
+  
+    <button
+      id="scrollToTopBtn"
+      class="scrollToTopBtn"
+      style="width: 50px !important"
+    >
+      <i class="fas fa-angle-up" style="font-size: 25px"></i>
+    </button>
+    <header class="head">
+      <div class="right-item">
+        <li class="hover-color">حراجی</li>
+        <li id="Product">
+          <span>محصولات</span>
+        </li>
+        <li id="product-item">
+          <span class="hover-color" style="right: -140px !important">کفش</span>
+          <span class="hover-color" style="right: -140px !important"
+            >شلوار</span
+          >
+          <span class="hover-color" style="right: -134px !important"
+            >تیشرت</span
+          >
+          <span class="hover-color">لوازم جانبی</span>
+        </li>
+        <li class="logo">لوگو</li>
+      </div>
+      <div id="left-item">
+        <div id="shop-cart">
+          <div id="carts-item">0</div>
+          <h3>سبدخرید</h3>
+          <img src="images/shopping-cart.gif" alt="" />
+        </div>
+        <div id="search-icon">
+          <i class="fas fa-search" style="font-size: 32px"></i>
+        </div>
+      </div>
+      <div id="search-box">
+        <i class="material-icons" style="font-size: 36px" id="close-btn"
+          >close</i
+        >
+        <input type="text" id="search-input" placeholder="Product name..." />
+        <button id="search-btn">جستجو</button>
+      </div>
+    </header>
+    <!-- End Header Section -->
+
+    <!-- Navigation Section -->
+    <section class="nav1">
+      <div class="hum-menu" onclick="menuhandle()">
+        <i class="fa fa-bars"></i>
+      </div>
+      <div class="shop-icon2" id="shop-icon2">
+        <span id="number-item">0</span>
+        <i class="fas fa-shopping-cart"></i>
+      </div>
+      <div class="logo2">
+        <h3>لوگو</h3>
+      </div>
+      <div class="all-items">
+        <li>حراجی</li>
+        <li>کفش</li>
+        <li>شلوار</li>
+        <li>تیشرت</li>
+        <li>لوازم جانبی</li>
+      </div>
+      <div id="search-icon2">
+        <i class="fas fa-search" style="font-size: 28px" id="oo"></i>
+      </div>
+      <div id="search-box2">
+        <i class="material-icons" style="font-size: 30px" id="close-btn2"
+          >close</i
+        >
+        <input type="text" id="search-input2" placeholder="Product name..." />
+        <button id="search-btn2">جستجو</button>
+      </div>
+    </section>
+    <!-- End Navigation Section -->
+    <div class="products-section">
+      <h2 class="section-title">محصولات تخفیفی</h2>
+      <div class="products-container">
+        <!-- آیتم‌های محصول -->
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 1" />
+          <h3>عنوان محصول 1</h3>
+          <p class="price">قیمت: 100,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">15%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 2" />
+          <h3>عنوان محصول 2</h3>
+          <p class="price">قیمت: 200,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">10%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 3" />
+          <h3>عنوان محصول 3</h3>
+          <p class="price">قیمت: 300,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">25%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 4" />
+          <h3>عنوان محصول 4</h3>
+          <p class="price">قیمت: 400,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">30%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 5" />
+          <h3>عنوان محصول 5</h3>
+          <p class="price">قیمت: 500,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">5%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 6" />
+          <h3>عنوان محصول 6</h3>
+          <p class="price">قیمت: 600,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 7" />
+          <h3>عنوان محصول 7</h3>
+          <p class="price">قیمت: 700,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">15%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 8" />
+          <h3>عنوان محصول 8</h3>
+          <p class="price">قیمت: 800,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 9" />
+          <h3>عنوان محصول 9</h3>
+          <p class="price">قیمت: 90,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">25%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 10" />
+          <h3>عنوان محصول 10</h3>
+          <p class="price">قیمت: 110,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">30%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 11" />
+          <h3>عنوان محصول 11</h3>
+          <p class="price">قیمت: 120,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">10%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 12" />
+          <h3>عنوان محصول 12</h3>
+          <p class="price">قیمت: 130,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">15%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 13" />
+          <h3>عنوان محصول 13</h3>
+          <p class="price">قیمت: 140,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">20%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 14" />
+          <h3>عنوان محصول 14</h3>
+          <p class="price">قیمت: 150,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">5%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 15" />
+          <h3>عنوان محصول 15</h3>
+          <p class="price">قیمت: 160,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+        <div class="product-item">
+          <div class="discount-badge">10%</div>
+          <img src="https://via.placeholder.com/150" alt="محصول 16" />
+          <h3>عنوان محصول 16</h3>
+          <p class="price">قیمت: 170,000 تومان</p>
+          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
+          <button class="more-button">بیشتر</button>
+        </div>
+      </div>
+    </div>
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-section">
+          <h3>محصولات</h3>
+          <ul>
+            <li><i class="fas fa-tshirt"></i> لباس</li>
+            <br />
+            <li><i class="fas fa-shoe-prints"></i> کفش</li>
+            <li>
+              <i
+                ><img
+                  src="images/watch.png"
+                  alt=""
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    left: 5px;
+                  "
+              /></i>
+              لوازم جانبی
+            </li>
+            <li>
+              <i
+                ><img
+                  src="images/primer.png"
+                  alt=""
+                  style="
+                    width: 30px;
+                    height: 30px;
+                    position: relative;
+                    top: 7px;
+                    left: 8px;
+                  "
+              /></i>
+              محصولات زیبایی
+            </li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>درباره ما</h3>
+          <ul>
+            <li><i class="fas fa-info-circle"></i> داستان ما</li>
+            <br />
+            <li><i class="fas fa-users"></i> تیم</li>
+            <br />
+            <li><i class="fas fa-map-marker-alt"></i>مکان ها</li>
+            <br />
+            <li><i class="fas fa-phone-alt"></i> تماس با ما</li>
+            <br />
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>اعتماد کنید</h3>
+          <ul>
+            <li><i class="fas fa-shield-alt"></i> سیاست حفظ حریم خصوصی</li>
+            <li><i class="fas fa-lock"></i> پرداخت های امن</li>
+            <li><i class="fas fa-thumbs-up"></i> نظرات مشتریان</li>
+            <li><i class="fas fa-headset"></i> پشتیبانی کنید</li>
+          </ul>
+        </div>
+      </div>
+      <hr style="background-color: #555; height: 0.5px; width: 100%" />
+      <div class="footer-bottom" style="position: relative; top: 10px">
+        &copy; بوتیک 2024. تمامی حقوق محفوظ است.
+      </div>
+    </footer>
+    <!-- End Footer Section -->
+
+    <script>
+      const $ = document;
+      var product_item = $.getElementById("product-item");
+      var product = $.getElementById("Product");
+      var search_icon = $.getElementById("search-icon");
+      var left_item = $.getElementById("left-item");
+      var search_box = $.getElementById("search-box");
+      var close_btn = $.getElementById("close-btn");
+      var search_input = $.getElementById("search-input");
+      var search_btn = $.getElementById("search-btn");
+      var search_icon2 = $.getElementById("search-icon2");
+      var search_box2 = $.getElementById("search-box2");
+      var close_btn2 = $.getElementById("close-btn2");
+      var search_input2 = $.getElementById("search-input2");
+      var search_btn2 = $.getElementById("search-btn2");
+      var carts_item_num = $.getElementById("carts-item");
+      const scrollToTopBtn = $.getElementById("scrollToTopBtn");
+      const number_item = $.getElementById("number-item");
+      const product_section_all = $.getElementById("product-section-all");
+      const shop_cart = $.getElementById("shop-cart");
+      const back_carts = $.getElementById("back-carts");
+      const shop_icon2 = $.getElementById("shop-icon2");
+
+      shop_cart.addEventListener("click", function () {
+        product_section_all.style.display = "block";
+      });
+
+      shop_icon2.addEventListener("click", function () {
+        product_section_all.style.display = "block";
+      });
+
+      back_carts.addEventListener("click", function () {
+        product_section_all.style.display = "none";
+      });
+
+      let cartItems = 0;
+      function addToCart() {
+        ++cartItems;
+        carts_item_num.innerHTML = cartItems;
+        number_item.innerHTML = cartItems;
+        for (let i = 0; i < 10; i++) {
+          setTimeout(() => {
+            carts_item_num.classList.add("vibrate");
+            number_item.classList.add("vibrate");
+            setTimeout(() => {
+              carts_item_num.classList.remove("vibrate");
+              number_item.classList.remove("vibrate");
+            }, 100); // مدت زمان ویبره
+          }, i * 100); // فاصله بین ویبره‌ها
+        }
+      }
+
+      window.onscroll = function () {
+        if (
+          document.body.scrollTop > 100 ||
+          document.documentElement.scrollTop > 100
+        ) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      };
+
+      scrollToTopBtn.addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      function menuhandle() {
+        var x = document.getElementsByClassName("all-items")[0];
+        if (x.style.display === "none" || x.style.display === "") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      product.addEventListener("mouseover", function () {
+        product_item.style.visibility = "visible";
+        product.style.color = "#0073d0";
+      });
+      product.addEventListener("mouseout", function () {
+        product_item.style.visibility = "hidden";
+        product.style.color = "#000";
+      });
+
+      product_item.addEventListener("mouseover", function () {
+        product_item.style.visibility = "visible";
+        product.style.color = "#0073d0";
+      });
+      product_item.addEventListener("mouseout", function () {
+        product_item.style.visibility = "hidden";
+        product.style.color = "#000";
+      });
+
+      search_icon.addEventListener("click", function () {
+        left_item.style.visibility = "hidden";
+        search_box.style.visibility = "visible";
+      });
+
+      close_btn.addEventListener("click", function () {
+        left_item.style.visibility = "visible";
+        search_box.style.visibility = "hidden";
+        search_input.value = "";
+        search_btn.style.backgroundColor = "#e8e8e8";
+        search_btn.style.color = "#B9B9B9";
+        search_btn.style.cursor = "not-allowed";
+      });
+
+      search_input.addEventListener("input", function () {
+        var search_input_value = search_input.value;
+
+        if (search_input_value !== "") {
+          search_btn.style.backgroundColor = "#0095e0";
+          search_btn.style.color = "#ffffff";
+          search_btn.style.cursor = "pointer";
+        } else {
+          search_btn.style.backgroundColor = "#e8e8e8";
+          search_btn.style.color = "#B9B9B9";
+          search_btn.style.cursor = "not-allowed";
+        }
+      });
+
+      search_btn.addEventListener("mouseover", function () {
+        if (search_input.value === "") {
+          search_btn.style.cursor = "not-allowed";
+        }
+      });
+
+      search_btn.addEventListener("mouseover", function () {
+        if (search_input.value !== "") {
+          search_btn.style.cursor = "pointer";
+        }
+      });
+
+      search_icon2.addEventListener("click", function () {
+        search_icon2.style.visibility = "hidden";
+        search_box2.style.visibility = "visible";
+      });
+
+      close_btn2.addEventListener("click", function () {
+        search_icon2.style.visibility = "visible";
+        search_box2.style.visibility = "hidden";
+        search_input2.value = "";
+        search_btn2.style.backgroundColor = "#e8e8e8";
+        search_btn2.style.color = "#B9B9B9";
+        search_btn2.style.cursor = "not-allowed";
+      });
+
+      search_input2.addEventListener("input", function () {
+        var search_input2_value = search_input2.value;
+
+        if (search_input2_value !== "") {
+          search_btn2.style.backgroundColor = "#0095e0";
+          search_btn2.style.color = "#ffffff";
+          search_btn2.style.cursor = "pointer";
+        } else {
+          search_btn2.style.backgroundColor = "#e8e8e8";
+          search_btn2.style.color = "#B9B9B9";
+          search_btn2.style.cursor = "not-allowed";
+        }
+      });
+
+      search_btn2.addEventListener("mouseover", function () {
+        if (search_input2.value === "") {
+          search_btn2.style.cursor = "not-allowed";
+        }
+      });
+
+      search_btn2.addEventListener("mouseover", function () {
+        if (search_input2.value !== "") {
+          search_btn2.style.cursor = "pointer";
+        }
+      });
+    </script>
+  </body>
+</html>
