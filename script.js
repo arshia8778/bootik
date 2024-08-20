@@ -29,6 +29,16 @@ const back_carts = $.getElementById("back-carts");
 const shop_icon2 = $.getElementById("shop-icon2");
 const login_signin2 = $.getElementById("login-signin2");
 
+window.addEventListener("load", function() {
+  const loader = document.querySelector('.loader-container');
+  document.body.style.overflowY = "hidden";
+  // نمایش لودر به مدت 5 ثانیه
+  setTimeout(function() {
+    document.body.style.overflowY = "auto";
+    loader.style.display = 'none'; // پنهان کردن لودر
+  }, 5000); // 5000 میلی‌ثانیه = 5 ثانیه
+});
+
 shop_cart.addEventListener("click", function () {
   product_section_all.style.display = "block";
 });

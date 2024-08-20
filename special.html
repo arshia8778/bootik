@@ -20,44 +20,50 @@
     />
   </head>
   <body>
-         <!-- products section -->
-         <div id="product-section-all">
-          <div class="sending-icon">
-            <div class="purchase-section">
-              <div class="step">
-                  <i class="fas fa-shopping-cart"></i>
-                  <h3>بررسی خرید</h3>
-                  <p>بررسی جزئیات خرید شما.</p>
-              </div>
-              <div class="line"></div>
-              <div class="step">
-                  <i class="fas fa-truck"></i>
-                  <h3>اطلاعات ارسال</h3>
-                  <p>اطلاعات مربوط به ارسال محصول.</p>
-              </div>
-              <div class="line"></div>
-              <div class="step">
-                  <i class="fas fa-credit-card"></i>
-                  <h3>نحوه پرداخت</h3>
-                  <p>روش‌های پرداخت موجود.</p>
-              </div>
-              <div class="line"></div>
-              <div class="step">
-                  <i class="fas fa-check-circle"></i>
-                  <h3>پایان خرید</h3>
-                  <p>خرید شما با موفقیت انجام شد.</p>
-              </div>
+    <div class="loader-container"><div class="custom-loader"></div></div> 
+    <!-- products section -->
+    <div id="product-section-all">
+      <div class="sending-icon">
+        <div class="purchase-section">
+          <div class="step">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>بررسی خرید</h3>
+            <p>بررسی جزئیات خرید شما.</p>
           </div>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-truck"></i>
+            <h3>اطلاعات ارسال</h3>
+            <p>اطلاعات مربوط به ارسال محصول.</p>
           </div>
-          <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
-          <div class="Total-price"><p>مبلغ کل سبد خرید:</p> <h5>0 تومان</h5></div>
-          <div class="cats-section-btn">
-            <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
-            <button id="order-registration-btn">ثبت سفارش<i class="fa fa-angle-left"></i></button>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-credit-card"></i>
+            <h3>نحوه پرداخت</h3>
+            <p>روش‌های پرداخت موجود.</p>
+          </div>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-check-circle"></i>
+            <h3>پایان خرید</h3>
+            <p>خرید شما با موفقیت انجام شد.</p>
           </div>
         </div>
-        <!-- products section Ends -->
-  
+      </div>
+      <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
+      <div class="Total-price">
+        <p>مبلغ کل سبد خرید:</p>
+        <h5>0 تومان</h5>
+      </div>
+      <div class="cats-section-btn">
+        <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
+        <button id="order-registration-btn">
+          ثبت سفارش<i class="fa fa-angle-left"></i>
+        </button>
+      </div>
+    </div>
+    <!-- products section Ends -->
+
     <button
       id="scrollToTopBtn"
       class="scrollToTopBtn"
@@ -361,6 +367,16 @@
       const shop_cart = $.getElementById("shop-cart");
       const back_carts = $.getElementById("back-carts");
       const shop_icon2 = $.getElementById("shop-icon2");
+
+      window.addEventListener("load", function () {
+        const loader = document.querySelector(".loader-container");
+        document.body.style.overflowY = "hidden";
+        // نمایش لودر به مدت 5 ثانیه
+        setTimeout(function () {
+          document.body.style.overflowY = "auto";
+          loader.style.display = "none"; // پنهان کردن لودر
+        }, 5000); // 5000 میلی‌ثانیه = 5 ثانیه
+      });
 
       shop_cart.addEventListener("click", function () {
         product_section_all.style.display = "block";
