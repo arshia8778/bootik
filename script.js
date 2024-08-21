@@ -29,13 +29,13 @@ const back_carts = $.getElementById("back-carts");
 const shop_icon2 = $.getElementById("shop-icon2");
 const login_signin2 = $.getElementById("login-signin2");
 
-window.addEventListener("load", function() {
-  const loader = document.querySelector('.loader-container');
+window.addEventListener("load", function () {
+  const loader = document.querySelector(".loader-container");
   document.body.style.overflowY = "hidden";
   // نمایش لودر به مدت 5 ثانیه
-  setTimeout(function() {
+  setTimeout(function () {
     document.body.style.overflowY = "auto";
-    loader.style.display = 'none'; // پنهان کردن لودر
+    loader.style.display = "none"; // پنهان کردن لودر
   }, 5000); // 5000 میلی‌ثانیه = 5 ثانیه
 });
 
@@ -253,47 +253,29 @@ search_btn2.addEventListener("mouseover", function () {
     search_btn2.style.cursor = "pointer";
   }
 });
-let currentSlide = 0;
-
-function moveSlide(direction) {
-  const slides = document.querySelectorAll(".slide");
-  const totalSlides = slides.length;
-
-  // به روز رسانی currentSlide
-  currentSlide += direction;
-
-  // اگر به آخرین اسلاید رسید، به اسلاید اول بروید
-  if (currentSlide >= totalSlides) {
-    currentSlide = 0; // به اسلاید اول بروید
-  } else if (currentSlide < 0) {
-    currentSlide = totalSlides - 1; // به آخرین اسلاید بروید
-  }
-
-  const slider = document.querySelector(".slider");
-  const slideWidth = slides[0].clientWidth;
-  slider.style.transform = `translateX(${-currentSlide * slideWidth}px)`;
-}
-
-// قابلیت لمسی
-let startX;
-let endX;
-
-const sliderElement = document.querySelector(".slider");
-
-sliderElement.addEventListener("touchstart", (event) => {
-  startX = event.touches[0].clientX;
-});
-
-sliderElement.addEventListener("touchmove", (event) => {
-  endX = event.touches[0].clientX;
-});
-
-sliderElement.addEventListener("touchend", () => {
-  if (startX > endX + 50) {
-    moveSlide(1); // به اسلاید بعدی بروید
-  } else if (startX < endX - 50) {
-    moveSlide(-1); // به اسلاید قبلی بروید
-  }
+const swiper2 = new Swiper(".swiper-container", {
+  loop: true, // اسلایدها تکرار شوند
+  slidesPerView: 4, // تعداد اسلایدهای قابل مشاهده
+  spaceBetween: 30, // فاصله بین اسلایدها
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    // تنظیمات برای اندازه‌های مختلف صفحه نمایش
+    1440: {
+      slidesPerView: 4, // 4 اسلاید در لپ‌تاپ
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2, // 2 اسلاید در تبلت
+    },
+    0: {
+      slidesPerView: 1, // 1 اسلاید در گوشی
+    },
+  },
 });
 document.querySelectorAll(".faq-item").forEach((item) => {
   item.addEventListener("click", () => {

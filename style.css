@@ -13,6 +13,7 @@ body {
   background-color: #ffffff;
   z-index: 999;
   position: fixed;
+  top: 0;
   height: 100%;
   width: 100%;
 }
@@ -447,19 +448,20 @@ input:focus {
   background-color: #fff;
   position: relative;
   top: 46px;
-  height: 510% !important;
+  height: 36.5vh;
   overflow: hidden;
   border-top: 1px solid #ddd;
   transition: display 0.4s ease-in-out;
   animation: navanimate 0.6s forwards;
   border-bottom: 1px solid #b2b2b2;
+  z-index: 999;
 }
 @keyframes navanimate {
   0% {
     height: 0;
   }
   100% {
-    height: 232px;
+    height: 36.5vh;
   }
 }
 .all-items li {
@@ -543,6 +545,7 @@ input:focus {
   height: 46px;
   width: 100%;
   position: fixed;
+  top: 0;
   z-index: 3;
 }
 
@@ -1194,9 +1197,9 @@ input:focus {
 }
 /* Swiper Styles */
 .swiper {
-  position: relative;
-  top: 150px;
-  width: 80%;
+  margin: 10vh auto;
+  margin-top: 20vh !important;
+  width: 90%;
   height: 450px;
   margin-bottom: 200px;
   animation: head2 2s forwards;
@@ -1222,7 +1225,7 @@ input:focus {
   object-fit: cover;
 }
 
-.swiper-button-next {
+.swiper .swiper-button-next {
   background-color: #fff;
   width: 60px !important;
   height: 60px !important;
@@ -1230,7 +1233,7 @@ input:focus {
   border-radius: 15px;
 }
 
-.swiper-button-prev {
+.swiper .swiper-button-prev {
   background-color: #fff;
   width: 60px !important;
   height: 60px !important;
@@ -1240,12 +1243,11 @@ input:focus {
 
 /* Gallery Styles */
 .gallery {
-  position: relative;
-  left: 10%;
-  top: 50px;
-  display: flex; /* استفاده از فلکس باکس */
-  justify-content: space-between; /* فاصله بین آیتم‌ها */
-  width: 80%; /* عرض کل 80% */
+  width: 80% !important;
+  margin: 10vh auto;
+  display: flex; 
+  justify-content: space-between; 
+  width: 105%; 
 }
 
 .item {
@@ -1275,13 +1277,17 @@ input:focus {
   font-size: 20px; /* اندازه فونت عنوان */
   color: #0073d0; /* رنگ عنوان */
 }
-
+@media (max-width: 768px){
+  .swiper {
+    margin-top: 5vh !important;
+  }
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
   .gallery {
     flex-direction: column; /* تغییر به حالت ستونی در صفحه نمایش‌های کوچک */
     align-items: center; /* مرکز قرار دادن در محور X */
-    margin-top: 70px;
+    margin-top: 10vh;
   }
 
   .item {
@@ -1426,9 +1432,9 @@ input:focus {
 }
 
 .products-section {
-  max-width: 1200px;
-  margin: 170px auto;
-  padding: 20px;
+  width: 90% !important;
+  margin: 25vh auto;
+  padding: 10vh;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -1542,107 +1548,129 @@ input:focus {
   }
 }
 /* featured section */
-.slider-container {
-  margin: 120px 0;
-  position: relative;
-  width: 100%;
-  z-index: 996;
-  overflow-x: hidden;
-}
-.slider-title {
-  width: 100%;
-  position: relative;
-  top: -80px;
-  left: 0;
-}
-.slider-title h1 {
-  color: #999999;
-  font-size: 23px;
-  position: absolute;
-  text-align: center;
-  background-color: #ffffff;
-  width: 100%;
-  padding-top: 20px;
-  padding-bottom: 30px;
-}
-.slider {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-
-.slide {
-  background-color: #fff;
-  min-width: 25%; /* 4 اسلاید در 1440 پیکسل */
+.custom-slider {
   box-sizing: border-box;
-  padding: 10px;
+  overflow: hidden;
+  width: 100%;
+  margin: 15vh 0;
+  padding-top: 15vh !important;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.slider-title{
   text-align: center;
+  color: #949494;
+  margin: 0 auto;
+  position: relative;
+  top: 26vh;
+  left: 8vh;
 }
 
-.slide img {
+.custom-slider .swiper-button-prev, .custom-slider .swiper-button-next {
+  position: relative !important; 
+  width: 4rem !important; 
+  height: 4rem !important; 
+  margin-top: 0 !important; 
+  z-index: 997 !important; 
+  color: black !important; 
+  height: 4rem !important;
+  width: 4rem !important;
+  border-radius: 0.5rem !important;
+  top: -45vh !important;
+  background: #fff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1) !important;
+  border: 0.1rem solid rgba(0, 0, 0, 0.3) !important;
+
+}
+.mg{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.custom-slider .swiper-button-prev:hover,
+.custom-slider .swiper-button-next:hover {
+  background: #10221b !important;
+  color: #fff !important;
+}
+
+.custom-slider .swiper-button-prev::after,
+.custom-slider .swiper-button-next::after {
+  font-size: 1.5rem !important;
+}
+
+.custom-slider .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+
+.custom-slider .swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f7f7f7;
+  border-radius: 15px; /* افزایش شعاع گوشه‌ها */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* سایه عمیق‌تر */
+  padding: 20px;
+  box-sizing: border-box;
+  transition: transform 0.3s, box-shadow 0.3s; /* ترنزیشن برای افکت hover */
+}
+
+
+.custom-slider .swiper-slide img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px; /* افزایش شعاع گوشه‌ها */
+  transition: transform 0.3s; /* ترنزیشن برای تصویر */
 }
 
-.slider button {
+
+.custom-slider h3 {
+  margin: 10px 0;
+  font-size: 20px; /* افزایش اندازه فونت */
+  color: #333; /* رنگ متن */
+}
+
+.custom-slider p {
+  font-size: 16px;
+  color: #555; /* رنگ متن ملایم‌تر */
+}
+
+.custom-slider button {
   margin-top: 10px;
   padding: 10px 15px;
   border: none;
-  background-color: #007bff;
+  background-color: #007BFF;
   color: white;
   cursor: pointer;
   border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s; /* ترنزیشن برای دکمه */
 }
 
-.slider button:hover {
+.custom-slider button:hover {
   background-color: #0056b3;
+  transform: translateY(-2px); /* حرکت به بالا هنگام hover */
 }
 
 /* Responsive Styles */
-@media (max-width: 1440px) {
-  .slide {
-    min-width: 25%; /* 4 اسلاید در 1440 پیکسل */
+@media (min-width: 1440px) {
+  .custom-slider .swiper-slide {
+      width: 25%; /* 4 اسلاید در لپ‌تاپ */
   }
 }
 
-@media (max-width: 768px) {
-  .slide {
-    min-width: 50%; /* 2 اسلاید در 768 پیکسل */
+@media (min-width: 768px) and (max-width: 1439px) {
+  .custom-slider .swiper-slide {
+      width: 50%; /* 2 اسلاید در تبلت */
   }
 }
 
-@media (max-width: 425px) {
-  .slide {
-    min-width: 100%; /* 1 اسلاید در 425 پیکسل */
+@media (max-width: 767px) {
+  .custom-slider .swiper-slide {
+      width: 100%; /* 1 اسلاید در گوشی */
   }
-}
-.more-button {
-  background-color: #28a745 !important;
-  transition: background-color 0.3s ease-in-out;
-}
-.more-button:hover {
-  background-color: #156b29 !important;
-}
-.prev,
-.next {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: #fff;
-  border: none;
-  padding: 10px 20px;
-  cursor: pointer;
-  border-radius: 15px;
-  font-size: 25px;
-  font-weight: 700;
-}
-
-.prev {
-  left: 10px;
-}
-
-.next {
-  right: 10px;
 }
 
 /* Services Section */
@@ -1654,6 +1682,7 @@ input:focus {
   flex-wrap: wrap;
   margin: 0 auto;
   max-width: 1200px;
+  width: 100%;
   gap: 20px;
   padding: 100px 50px;
   background-color: #fff;
@@ -1662,7 +1691,7 @@ input:focus {
 }
 .services-title {
   position: absolute;
-  left: 47%;
+  left: 47% !important;
   z-index: 996;
   transform: translateY(-700%);
 }
@@ -1717,14 +1746,14 @@ input:focus {
 /* Social Section */
 .social-container {
   position: relative;
-  top: 120px;
-  width: 80%;
-  margin: 0px auto;
-  margin-top: 60px;
+  top: 30vh;
+  width: 85%;
+  margin: 0 auto !important;
+  margin-top: 10vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap; /* برای ریسپانسیو شدن */
-  padding: 100px 50px;
+  padding: 20vh 10vh;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -1802,14 +1831,13 @@ input:focus {
 .FAQ-title {
   position: absolute;
   transform: translateY(-200%);
-  left: 45%;
+  left: 50%;
   z-index: 996;
 }
 .faq-container {
-  margin-top: 350px !important;
-  margin-bottom: 200px !important;
-  width: 80%;
-  margin: 220px auto 100px auto;
+  width: 86%;
+  margin: 22vh auto;
+  margin-top: 40vh;
   display: flex;
   flex-direction: column;
   gap: 20px; /* فاصله بین سوالات */
@@ -1864,7 +1892,7 @@ input:focus {
 
 @media (max-width: 768px) {
   .FAQ-title {
-    left: 40% !important;
+    left: 45% !important;
   }
   .FAQ-title h1 {
     font-size: 22px !important;
@@ -1890,9 +1918,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 .footer-container {
-  width: 80%;
+  width: 73%;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;

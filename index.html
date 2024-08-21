@@ -24,7 +24,7 @@
     />
   </head>
   <body>
-    <div class="loader-container"><div class="custom-loader"></div></div> 
+    <div class="loader-container"><div class="custom-loader"></div></div>
     <button id="scrollToTopBtn" class="scrollToTopBtn">
       <i class="fas fa-angle-up" style="font-size: 25px"></i>
     </button>
@@ -36,9 +36,13 @@
           <span>محصولات</span>
         </li>
         <li id="product-item">
-          <span class="hover-color" style="right: -140px !important;">کفش</span>
-          <span class="hover-color" style="right: -140px !important;">شلوار</span>
-          <span class="hover-color" style="right: -134px !important;">تیشرت</span>
+          <span class="hover-color" style="right: -140px !important">کفش</span>
+          <span class="hover-color" style="right: -140px !important"
+            >شلوار</span
+          >
+          <span class="hover-color" style="right: -134px !important"
+            >تیشرت</span
+          >
           <span class="hover-color">لوازم جانبی</span>
         </li>
         <li class="logo">لوگو</li>
@@ -112,43 +116,48 @@
     </section>
     <!-- End Navigation Section -->
 
-     <!-- products section -->
-      <div id="product-section-all">
-        <div class="sending-icon">
-          <div class="purchase-section">
-            <div class="step">
-                <i class="fas fa-shopping-cart"></i>
-                <h3>بررسی خرید</h3>
-                <p>بررسی جزئیات خرید شما.</p>
-            </div>
-            <div class="line"></div>
-            <div class="step">
-                <i class="fas fa-truck"></i>
-                <h3>اطلاعات ارسال</h3>
-                <p>اطلاعات مربوط به ارسال محصول.</p>
-            </div>
-            <div class="line"></div>
-            <div class="step">
-                <i class="fas fa-credit-card"></i>
-                <h3>نحوه پرداخت</h3>
-                <p>روش‌های پرداخت موجود.</p>
-            </div>
-            <div class="line"></div>
-            <div class="step">
-                <i class="fas fa-check-circle"></i>
-                <h3>پایان خرید</h3>
-                <p>خرید شما با موفقیت انجام شد.</p>
-            </div>
-        </div>
-        </div>
-        <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
-        <div class="Total-price"><p>مبلغ کل سبد خرید:</p> <h5>0 تومان</h5></div>
-        <div class="cats-section-btn">
-          <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
-          <button id="order-registration-btn">ثبت سفارش<i class="fa fa-angle-left"></i></button>
+    <!-- products section -->
+    <div id="product-section-all">
+      <div class="sending-icon">
+        <div class="purchase-section">
+          <div class="step">
+            <i class="fas fa-shopping-cart"></i>
+            <h3>بررسی خرید</h3>
+            <p>بررسی جزئیات خرید شما.</p>
+          </div>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-truck"></i>
+            <h3>اطلاعات ارسال</h3>
+            <p>اطلاعات مربوط به ارسال محصول.</p>
+          </div>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-credit-card"></i>
+            <h3>نحوه پرداخت</h3>
+            <p>روش‌های پرداخت موجود.</p>
+          </div>
+          <div class="line"></div>
+          <div class="step">
+            <i class="fas fa-check-circle"></i>
+            <h3>پایان خرید</h3>
+            <p>خرید شما با موفقیت انجام شد.</p>
+          </div>
         </div>
       </div>
-      <!-- products section Ends -->
+      <div class="Cart-products"><p>محصولی در سبد خرید وجود ندارد</p></div>
+      <div class="Total-price">
+        <p>مبلغ کل سبد خرید:</p>
+        <h5>0 تومان</h5>
+      </div>
+      <div class="cats-section-btn">
+        <button id="back-carts"><i class="fa fa-angle-right"></i>بازگشت</button>
+        <button id="order-registration-btn">
+          ثبت سفارش<i class="fa fa-angle-left"></i>
+        </button>
+      </div>
+    </div>
+    <!-- products section Ends -->
 
     <!-- login sign up section -->
 
@@ -360,120 +369,95 @@
 
     <!-- Featured Section -->
     <div class="slider-title"><h1>جدید ترین محصولات</h1></div>
-    <div class="slider-container">
-      <div class="slider">
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 1" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
+    <div class="custom-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <!-- اسلاید 1 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 1" />
+            <h3>عنوان محصول 1</h3>
+            <p>قیمت: 100,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 2 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 2" />
+            <h3>عنوان محصول 2</h3>
+            <p>قیمت: 200,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 3 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 3" />
+            <h3>عنوان محصول 3</h3>
+            <p>قیمت: 300,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 4 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 4" />
+            <h3>عنوان محصول 4</h3>
+            <p>قیمت: 400,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 5 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 5" />
+            <h3>عنوان محصول 5</h3>
+            <p>قیمت: 500,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 6 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 6" />
+            <h3>عنوان محصول 6</h3>
+            <p>قیمت: 600,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 7 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 7" />
+            <h3>عنوان محصول 7</h3>
+            <p>قیمت: 700,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 8 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 8" />
+            <h3>عنوان محصول 8</h3>
+            <p>قیمت: 800,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 9 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 9" />
+            <h3>عنوان محصول 9</h3>
+            <p>قیمت: 900,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
+          <!-- اسلاید 10 -->
+          <div class="swiper-slide">
+            <img src="images/backiee-119832.jpg" alt="محصول 10" />
+            <h3>عنوان محصول 10</h3>
+            <p>قیمت: 1,000,000 تومان</p>
+            <button class="add-button">اضافه کردن</button>
+            <button class="more-button">بیشتر</button>
+          </div>
         </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 2" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 3" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 4" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 5" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 6" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 7" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 8" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 9" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
-        </div>
-        <div class="slide">
-          <img src="images/backiee-119832.jpg" alt="محصول 10" />
-          <h3>عنوان محصول 1</h3>
-          <p>قیمت: 1,000,000 تومان</p>
-          <button class="add-button" onclick="addToCart()">اضافه کردن</button>
-          <button class="more-button">بیشتر</button>
+        <div class="mg">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
-      <button class="prev" onclick="moveSlide(-1)">
-        <i class="fa fa-angle-left"></i>
-      </button>
-      <button class="next" onclick="moveSlide(1)">
-        <i class="fa fa-angle-right"></i>
-      </button>
     </div>
     <!-- End Featured Section -->
 
